@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BRICK</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="site_container">
+		<header>
+			<a class="logo" href="#">
+				<img src="img/BRICK-logo.svg" alt="asics">
+			</a>
+			<a class="tel" href="tel:+78009903443">8 800 990-34-43</a>
+		</header>
+		<div class="content">
+
+
+			<!-- Слайдер -->
+			<div class="slider-wrapper">
+
+				<div class="slider-product" data-id = "1">
+					<img src="img/white-01.jpg" alt="asics">
+					<img src="img/white-02.jpg" alt="asics">
+					<img src="img/white-03.jpg" alt="asics">
+				</div>	
+
+				<div class="slider-product" data-id = "2">
+					<img src="img/black-01.jpg" alt="asics">
+					<img src="img/black-02.jpg" alt="asics">
+					<img src="img/black-03.jpg" alt="asics">
+				</div>
+
+			</div>
+			<!-- //Слайдер -->
+
+			
+			<aside class="product-properties">
+				<h2 class="title">ASICS</h2>
+				<p class="description">Мужские кроссовки Gel-Kayano Trainer Knit Reflective Knit Pack Silver/Black</p>
+				<div class="price">13 980</div>
+
+				<!-- форма добавленяи в корзину -->
+				<form action="" method="" class="add-basket-form">
+
+					<!-- выбор цвета -->
+					<div class="wrapper-attr colors">
+						<p class="name-attr">Цвет</p>
+						<div class="value-attr">	
+							<label class="container">
+								<input type="radio" class="color-product" name="color" data-color="#000" data-id = "1">
+								<div class="mark"></div>
+							</label>
+							<label class="container">
+								<input type="radio" class="color-product" name="color" data-color="white" data-id = "2">
+								<div class="mark"></div>
+							</label>
+							<label class="container">
+								<input type="radio" class="color-product" name="color" data-color="rgb(0, 255, 153)" data-id = "3">
+								<div class="mark"></div>
+							</label>				
+						</div>
+					</div>
+					<!-- // выбор цвета -->
+
+					<!-- выбор размера -->
+					<div class="wrapper-attr size">
+						<p class="name-attr">Размер</p>						
+						<div class="value-attr">	
+
+							<select name="size" class="size-product" > 
+								<option value=""  selected default>Выберите размер</option> 
+
+								<option value="54" data-id = "1">54</option>				
+								<option value="57" data-id = "1">57</option>
+
+								<option value="65" data-id = "2">65</option> 
+								<option value="64" data-id = "2">64</option>
+								<option value="66" data-id = "2">66</option>
+
+								<option value="75" data-id = "3">75</option> 
+								<option value="74" data-id = "3">74</option>
+								<option value="76" data-id = "3">76</option>
+								<option value="77" data-id = "3">77</option>
+
+							</select>
+
+						</div>	
+					</div>
+					<!-- // выбор размера -->
+
+					<input type="submit" name="submit" value="Добавить в корзину" class="add-basket" disabled>
+				</form>
+				<!-- // форма добавленяи в корзину -->
+
+				<div class="attrs">
+					<div class="wrapper-attr">
+						<p class="name-attr">Артикул</p>
+						<p class="value-attr">H7S3N-931</p>
+					</div>			
+					<div class="wrapper-attr">
+						<p class="name-attr">Материал</p>
+						<p class="value-attr">текстиль, резина</p>
+					</div>			
+					<div class="wrapper-attr">
+						<p class="name-attr">Страна</p>
+						<p class="value-attr">Индонезия</p>
+					</div>
+				</div>
+				<input id="show_more" type="checkbox" class = "hidden">
+				<p class="detail-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<label for="show_more" class="more"></label>
+			</aside>
+
+		</div>
+
+	</div>
+</body>
+</html>

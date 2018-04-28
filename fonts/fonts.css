@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "SF-Regular";
+    src: url("SF-UI-Text-Regular.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "SF-Black";
+    src: url("SF-UI-Display-Black.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF-Bold";
+    src: url("SF-UI-Display-Bold.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF-Medium";
+    src: url("SF-UI-Text-Medium.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF-Light";
+    src: url("SF-UI-Display-Light.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
