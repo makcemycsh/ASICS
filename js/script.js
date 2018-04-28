@@ -1,3 +1,11 @@
+function Slider(){ 
+		$(".slider-product").slick({
+		appendArrows: $('.slider-arrow'),
+		prevArrow: '<div class="prev"></div>',
+		nextArrow: '<div class="next"></div>'
+	});
+};
+
 $(document).ready(function($) {
 	//Получаем цвета предложений, переданные через data-color
 	var $color = $('.product-properties .colors .color-product');
@@ -16,6 +24,7 @@ $(document).ready(function () {
 	var $options;
 	var $cur_options; 
 	var $select;
+	var $slider_img;
 
 	//Получаем id предложения
 	$cur_offer = $('input[type=radio][name=color]').attr('data-id');
@@ -25,7 +34,12 @@ $(document).ready(function () {
 	$options.prop('hidden',true);
 	$options.prop('disabled', true);
 
-	//Если сменили цвет, меняем на соотвествующие размеры
+	//Скрываем слайды
+	$slider_img = $('.content .slider-wrapper .slider-product img:not([data-id='+$cur_offer+'])');
+	$slider_img.detach();	
+	Slider(); 
+
+	//Если сменили цвет, меняем на соотвествующие размеры и слайды
 	$('input[type=radio][name=color]').change(function () {
 
 		$select = $('.product-properties .size-product option');
@@ -44,6 +58,13 @@ $(document).ready(function () {
 		//Устанавливаем дефолтное значение
 		$select.eq(0).prop('selected', true).change();
 
+		//Показываем слайды текущего цвета
+		$(".slider-product").slick('unslick');
+		$slider_img.detach().appendTo('.slider-product');
+
+		$slider_img = $('.content .slider-wrapper .slider-product img:not([data-id='+$cur_offer+'])');
+		$slider_img.detach();	
+		Slider(); 
 
 
 	});

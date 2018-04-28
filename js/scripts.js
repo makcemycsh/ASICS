@@ -1,4 +1,15 @@
+$(document).ready(function() {
+	console.log("slick");
+    $(".slider").slick({
+        appendArrows: $('.slider-arrow'),
+        prevArrow: '<div class="prev"></div>',
+        nextArrow: '<div class="next"></div>'
+    });
+
+});
+
 $(document).ready(function($) {
+		console.log("slick");
 	//Получаем цвета предложений, переданные через data-color
 	var $color = $('.product-properties .colors .color-product');
 	var $container = $('.product-properties .colors .mark');
