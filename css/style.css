@@ -28,10 +28,13 @@ header{
 	        align-items: center;
 	margin: 2.5em 0;
 }
-header img{
-	-o-object-fit: cover;
-	   object-fit: cover;
+header .logo img{
+	-o-object-fit: contain;
+	   object-fit: contain;
 
+	height: 2em;
+	width: 7em;
+	margin-bottom: 0.5em;
 }
 header .tel{
 	font-family: SF-Regular, sans-serif;
@@ -63,8 +66,8 @@ header .tel{
 
 .content .slider-wrapper .slide{
 	display: block;
-	-o-object-fit: cover;
-	   object-fit: cover;
+	-o-object-fit: contain;
+	   object-fit: contain;
 	padding: 0 3em;
 }
 
