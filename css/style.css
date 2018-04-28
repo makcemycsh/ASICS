@@ -13,18 +13,24 @@ a{
 .site_container{
 	max-width: 1600px;
 	width: 85%;
-	margin: 0 auto;
-	
+	margin: 0 auto;	
 }
 
 header{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin: 2.5em 0;
 }
 header img{
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 
 }
 header .tel{
@@ -32,12 +38,20 @@ header .tel{
 	font-size: 1.4em;
 }
 
-
 .content{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-start;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 } 
 
 /*слайдер*/
@@ -49,14 +63,22 @@ header .tel{
 
 .content .slider-wrapper .slide{
 	display: block;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	padding: 0 3em;
 }
 
 .content .slider-wrapper .slider-arrow{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .content .slider-wrapper .prev,
@@ -116,6 +138,8 @@ header .tel{
 	border: solid 0.35em #1e1e1e;
 	cursor: pointer;
 	margin-top: 1em;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 	font-family: SF-Light, sans-serif;
 }
@@ -130,10 +154,16 @@ header .tel{
 
 .product-properties .wrapper-attr{
 	width:100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 	margin: 1em 0;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 }
 .product-properties .wrapper-attr .name-attr{
@@ -157,6 +187,8 @@ header .tel{
 	font-family: SF-Regular, sans-serif;
 	line-height: 1.7;
 	max-height: 7em;
+	-webkit-transition: .6s;
+	-o-transition: .6s;
 	transition: .6s;
 	overflow-y: hidden;
 	position: relative;
@@ -171,6 +203,9 @@ header .tel{
 	left: 0;
 	height: 2.5em;
 	opacity: .6;
+	background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#fff1));
+	background: -webkit-linear-gradient(bottom, #fff, #fff1);
+	background: -o-linear-gradient(bottom, #fff, #fff1);
 	background: linear-gradient(0deg, #fff, #fff1);
 }
 .product-properties .more{
@@ -181,6 +216,8 @@ header .tel{
 
 .product-properties .more:after{
 	content: 'Показать больше \2193';
+	-webkit-transition: .6s;
+	-o-transition: .6s;
 	transition: .6s;
 
 }
@@ -197,11 +234,21 @@ header .tel{
 }
 
 .product-properties .colors .value-attr{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .product-properties .colors input{
 	opacity: 0;
@@ -236,10 +283,14 @@ header .tel{
 	border: solid 5px #ececec;
 	top:50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
 	width: 100%;
 	height: 100%;
 	opacity: 0;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 	
 }
@@ -264,7 +315,9 @@ header .tel{
 	font-size: 1.2em;
 	left: 0;
 	top: 50%;
-	transform: translate(0%, -50%);
+	-webkit-transform: translate(0%, -50%);
+	    -ms-transform: translate(0%, -50%);
+	        transform: translate(0%, -50%);
 	width: 100%;
 	background: none;
 	border: none;
@@ -274,8 +327,8 @@ header .tel{
 	height: 2em;
 
 	-webkit-appearance: none;
-	-moz-appearance:    none;
-	appearance:         none;
+		-moz-appearance: none;
+				appearance: none;
 
 	background: url('../img/arrow_bot.png') no-repeat right/10%;
 } 
@@ -290,10 +343,15 @@ header .tel{
 @media (max-width: 991px) {
 	header,
 	.content {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	header{
-		align-items: flex-start;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
 	}
 	
 	.content .slider-wrapper,

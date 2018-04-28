@@ -75,7 +75,7 @@ $(document).ready(function($) {
 	$('select[name=size]').change(function () {
 		var $btn_basket = $('.product-properties .add-basket');
 		var $selected = $('.product-properties .size-product option:selected');
-
+	
 		// Если размер выбран, активируем кнопку
 		if($selected.val() != ""){
 			$btn_basket.prop('disabled', false);
