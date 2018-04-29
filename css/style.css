@@ -68,7 +68,7 @@ header .tel{
 	display: block;
 	-o-object-fit: contain;
 	   object-fit: contain;
-	padding: 0 3em;
+    	padding: 0 3em;
 }
 
 .content .slider-wrapper .slider-arrow{
@@ -180,7 +180,7 @@ header .tel{
 .product-properties .wrapper-attr .value-attr{
 	font-family: SF-Regular, sans-serif;
 	position: relative;
-	width:69%;
+	width:70%;
 }
 
 .product-properties .attrs{
@@ -339,7 +339,7 @@ header .tel{
 @media (max-width: 1199px) {
 	.content .slider-wrapper,
 	.content .product-properties{
-		width: 49%;
+		width: 50%;
 	}
 }
 
@@ -359,7 +359,7 @@ header .tel{
 	
 	.content .slider-wrapper,
 	.content .product-properties{
-		width: 97%;
+		width: 100%;
 		margin: 0 auto 2em auto;
 	}
 	.content .slider-wrapper .slide{
